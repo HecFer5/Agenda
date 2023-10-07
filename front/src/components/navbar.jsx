@@ -48,6 +48,14 @@ const Navbar = () => {
                                 NUEVO INGRESO
                             </MenuItemLink>
                         </MenuItem>
+                        <MenuItem>
+                            <MenuItemLink to={'/turnos'}>
+                                <div>
+                                    <FaFileSignature />
+                                </div>
+                                TURNOS
+                            </MenuItemLink>
+                        </MenuItem>
                     </Menu>
                 </IconContext.Provider>
             </Wrapper>

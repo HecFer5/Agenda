@@ -2,6 +2,8 @@ import { useEffect, useState } from "react"
 import React from 'react'
 import axios from 'axios'
 import { Link } from 'react-router-dom'
+import {Button, Container} from '@mui/material'
+
 
 const URI = 'http://localhost:8000/pacientes/'
 
@@ -28,8 +30,9 @@ const deleteBlogs = async (id) =>{
 }
 
 return(<>
+    <Container sx={{border: ".2rem", borderStyle : "solid", boxShadow: 5, pb: '8px', pt: '1rem', mt: '5px'}}>
 
-<div className="container">
+{/* <div className="container"> */}
    <div className="row">
       <div className="col">
          <Link to = '/create' className="btn btn-primary mt-2 mb-5">Crear nuevo</Link>
@@ -64,7 +67,8 @@ return(<>
    </div>
    <Link to= {`/`} className="btn btn-info"> Volver al principio</Link>
 
-</div>
+{/* </div> */}
+</Container>
 </>
 )
 }

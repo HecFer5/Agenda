@@ -2,6 +2,12 @@ import axios from 'axios'
 import { useState } from 'react'
 import { useNavigate, Link } from 'react-router-dom'
 
+
+
+
+
+
+
 const URI = 'http://localhost:8000/pacientes/'
 
 const CompCreateBlog = () => {
